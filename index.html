@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Crystal Collector Game</title>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+</head>
+<body>
+
+<div class="jumbotron">
+	<h1 class="text-center">Crystal Collector Game</h1>
+	
+		<p class="text-justified">
+			You will be given a random number at the start of the
+			game. There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score. You win the game by matching your total score to random number, you lose the game if your total score goes above the random number. The value of each crystal is hidden from you until you click on it. Each time when the game starts, the game will change the values of each crystal.
+		</p>
+</div>
+
+<div class="container">
+
+<div class="row">
+	<div class="col-lg-4">
+		<h2>Match this number:</h2>
+		<h2 id="computerTotal"></h2>
+	</div>
+	</div>
+
+	<div class="row">
+		<div class="col-lg-6">
+			<div class="panel-body">
+				<h2>Click the crystal to reveal the number!</h2>
+				<img src="assets/images/diamond-icon.png" class="button" id="diamond" value="randomNumber-1" height="100px" width="100px">
+				<img src="assets/images/garnet-icon.png" class="button" id="garnet" value="randomNumber-2" height="100px" width="100px">
+				<img src="assets/images/ruby-icon.png" class="button" id="ruby" value="randomNumber-3" height="100px" width="100px">
+				<img src="assets/images/topaz-icon.png" class="button" id="topaz" value="randomNumber-4" height="100px" width="100px">
+
+			</div>
+
+	
+	<div class="row">
+		<h2>Your total score is: </h2>
+		<h2 id="userTotal"></h2>
+	</div>
+
+	<div class="row">
+		<h3>Wins:</h3><h3 id="win"></h3>
+		<br>
+		<h3>Lose:</h3><h3 id="lose"></h3>
+		
+	</div>
+
+
+		</div>
+
+	</div>
+</div>
+
+
+</body>
+
+<script src="assets/javascript/game.js"></script>
+
+</html>
+
+
+
